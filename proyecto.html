@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Inteligente de Gestión Escolar</title>
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+
+<header>
+    <img src="https://th.bing.com/th/id/R.db734e298049c6241589f3bae2d81bcd?r=0" class="logo">
+    <h1>Sistema de Gestión Escolar</h1>
+</header>
+
+<div class="container">
+
+    <h2>Registro de Estudiante</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="number" id="edad" placeholder="Edad">
+    <input type="text" id="grado" placeholder="Grado">
+    <input type="text" id="curso" placeholder="Curso">
+    <input type="text" id="notas" placeholder="Notas (Ej: 80,90,100)">
+
+    <button onclick="registrarEstudiante()">Registrar</button>
+
+    <div class="acciones">
+        <button onclick="agregarNota()">Agregar Nota (push)</button>
+        <button onclick="eliminarNota()">Eliminar Nota (pop)</button>
+        <button onclick="ordenarNotas()">Ordenar Notas</button>
+    </div>
+
+    <div id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
