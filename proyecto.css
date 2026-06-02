@@ -1,64 +1,125 @@
 body {
-    font-family: Arial;
     margin: 0;
-    background: linear-gradient(135deg, #0f2027, #2c5364);
+    font-family: "Times New Roman", serif;
+    background: #eef2f3;
+}
+
+/* HEADER */
+.topbar {
+    background: rgb(174, 219, 250);
+    padding: 15px 20px;
+    border-bottom: 3px solid #2a9d8f;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO IZQUIERDA */
+.logo-top {
+    width: 90px;
+    margin-right: 20px;
+}
+
+/* TEXTO VERDE LIMÓN CLARO */
+.topbar h1 {
+    margin: 0;
+    color: #bff371;
+    font-size: 26px;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #1b3c59;
     color: white;
-}
-
-header {
-    text-align: center;
     padding: 20px;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    box-shadow: 0 0 20px #00c6ff;
 }
 
-.logo {
-    width: 80px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px white;
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #2a9d8f;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
-.container {
-    max-width: 600px;
-    margin: 40px auto;
-    background: rgba(0,0,0,0.6);
+.sidebar button:hover {
+    background: #21867a;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* FORMULARIO MÁS GRANDE */
+.formulario {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: white;
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-input {
+/* INPUTS */
+input, select {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
-    border: none;
-    border-radius: 8px;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background: linear-gradient(90deg, #00ffcc, #00c6ff);
+/* BOTÓN */
+.card button {
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 10px 25px;
+    background: #2a9d8f;
     border: none;
-    border-radius: 10px;
-    color: black;
-    font-weight: bold;
+    color: white;
     cursor: pointer;
-    box-shadow: 0 0 10px #00ffcc;
+    border-radius: 5px;
 }
 
-button:hover {
-    transform: scale(1.05);
+.card button:hover {
+    background: #21867a;
 }
 
-.acciones button {
-    margin-top: 5px;
+/* SECCIONES */
+.oculto {
+    display: none;
 }
 
-#resultado {
-    margin-top: 20px;
+/* ESTUDIANTES */
+.estudiante {
+    background: white;
     padding: 15px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #2a9d8f;
+}
+
+/* RESULTADOS */
+.resultado-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #2a9d8f;
 }
